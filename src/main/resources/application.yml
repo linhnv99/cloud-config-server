@@ -1,0 +1,16 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/linhnv99/cloud-config-repository
+          username: linhnv99
+          password: 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
+          clone-on-start: false
+          default-label: master
+          search-paths: dev  # Notice
